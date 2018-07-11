@@ -1,0 +1,82 @@
+.welcome {}
+
+.order-cta {
+  background-color: #f1c40a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    background-image: url('../images/bg-wave.png');
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 366px;
+  }
+
+  .cta {
+    width: 90%;
+    margin: -100px auto 0 auto;
+
+    .heading {
+      margin-bottom: 45px;
+
+      .logo {
+        max-width: 50%;
+      }
+
+      .title {
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        color: #000;
+        text-align: left;
+        font-size: 48px;
+        letter-spacing: .02em;
+        font-family: ClanPro-News, Helvetica, sans-serif;
+        font-weight: 600;
+      }
+
+      @media screen and (min-width: $WIDTH_XS) {
+        max-width: 60%;
+
+        .title {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+.cta-form {
+  background-color: #FFF;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 10px;
+  //box-shadow: $SHADOW_XY_DEFAULT;
+
+  $INPUT_HEIGHT: 55px;
+  .cta-input {
+    input {
+      height: $INPUT_HEIGHT;
+    }
+
+    .input-group-btn > .btn {
+      height: $INPUT_HEIGHT;
+      line-height: 35px;
+      vertical-align: middle;
+      padding: 10px 16px;
+      font-size: 20px;
+      font-weight: 500;
+
+      @media screen and (max-width: $WIDTH_XS) {
+        font-size: 12px;
+      }
+    }
+  }
+}

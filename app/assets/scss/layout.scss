@@ -1,0 +1,14 @@
+//
+////add margin so that the content is not under the static header
+//.content {
+//  margin-top: $HEADER_HEIGHT;
+//}
+
+body {
+  font-family: ClanPro-News, Helvetica, sans-serif;
+}
+
+a:hover {
+  color: $CL_TEXT_SECONDARY;
+  text-decoration: none !important;
+}
